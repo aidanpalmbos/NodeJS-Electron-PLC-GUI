@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Electron PLC Controller</h1>
+    <div class="flexContainerStyleA">
+        <div class="flexContainerStyleB" style="border-right: 2px solid black;">
+            <p>Enter IP of PLC Controller: </p>
+            <input id="EnterIP" type="text" />
+            <button id="SendIP" onclick="changeIP();">Submit IP Address</button>
+            <p id="StatusIP">PLC IP Address is: "192.168.0.0"</p>
+            <hr />
+            <button onclick="connect();">Connect PLC</button>
+            <p id="PlcConnection" style="margin-bottom: 0px;">Connection Response from PLC: </p>
+            <p id="StatusPlcConnection" style="margin-top: .25em; height: 6em;"></p>
+        </div>
+        <div class="flexContainerStyleB">
+            <p>Read a PLC Tag:</p>
+            <input id="ReadEnterTag" type="text" />
+            <button id="PerformRead" onclick="readTag();">Read the Tag</button>
+            <p id="StatusReadTag">Result = </p>
+        </div>
+    </div>
+
+</body>
+</html>

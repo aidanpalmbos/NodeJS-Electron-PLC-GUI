@@ -1,0 +1,47 @@
+@font-face { /*https://fonts.google.com/specimen/Kanit*/
+    font-family: "Kanit";
+    src: url('Kanit-Regular.ttf');
+}
+html * {
+    font-family: Kanit;
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0px;
+    background-color: #679ead;
+}
+
+h1 {
+    text-align: center;
+}
+hr {
+    border-color: black;
+    margin: 2em 0px;
+}
+input {
+    margin: 1.5em;
+}
+
+.flexContainerStyleA {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.flexContainerStyleB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flexContainerStyleB > * {
+    width: 80%;
+}
+
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}

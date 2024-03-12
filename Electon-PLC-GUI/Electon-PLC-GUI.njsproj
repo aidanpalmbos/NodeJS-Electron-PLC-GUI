@@ -29,8 +29,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="client\index.css" />
+    <Content Include="client\index.html" />
+    <Content Include="client\index.js" />
+    <Content Include="client\Kanit-Regular.ttf" />
     <Content Include="package.json" />
+    <Content Include="preload.js" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="client\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
