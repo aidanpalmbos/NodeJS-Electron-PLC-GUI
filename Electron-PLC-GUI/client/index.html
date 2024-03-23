@@ -7,22 +7,40 @@
 <body>
     <h1>Electron PLC Controller</h1>
     <div class="flexContainerStyleA">
-        <div class="flexContainerStyleB" style="border-right: 2px solid black;">
+
+        <div class="flexContainerStyleB">
+
             <p>Enter IP of PLC Controller: </p>
             <input id="EnterIP" type="text" />
             <button id="SendIP" onclick="changeIP();">Submit IP Address</button>
             <p id="StatusIP">PLC IP Address is: "192.168.0.0"</p>
+
             <hr />
-            <button onclick="connect();">Connect PLC</button>
+
+            <button onclick="connect();">Connect to PLC</button>
             <p id="PlcConnection" style="margin-bottom: 0px;">Connection Response from PLC: </p>
             <p id="StatusPlcConnection" style="margin-top: .25em; height: 6em;"></p>
+
         </div>
-        <div class="flexContainerStyleB">
+
+        <div class="flexContainerStyleB" style="border-left: 2px solid black;">
+
             <p>Read a PLC Tag:</p>
             <input id="ReadEnterTag" type="text" />
             <button id="PerformRead" onclick="readTag();">Read the Tag</button>
             <p id="StatusReadTag">Result = </p>
+
+            <hr />
+
+            <p>Write to a PLC Tag:</p>
+            <input id="WriteEnterTag" type="text" style="margin-bottom: 0px;" />
+            <p style="margin-bottom: 0px;">New value of the Tag:</p>
+            <input id="WriteValueToTag" type="text" />
+            <button id="PerformWrite" onclick="writeTag();">Write to the Tag</button>
+            <p id="StatusWriteTag">Result = </p>
+
         </div>
+
     </div>
 
 </body>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Electon-PLC-GUI", "Electon-PLC-GUI\Electon-PLC-GUI.njsproj", "{C9C1D8D7-3E5B-4E61-AC5E-6D7878B88D97}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Electron-PLC-GUI", "Electron-PLC-GUI\Electron-PLC-GUI.njsproj", "{C9C1D8D7-3E5B-4E61-AC5E-6D7878B88D97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

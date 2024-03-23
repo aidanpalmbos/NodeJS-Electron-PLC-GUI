@@ -1,21 +1,20 @@
 {
-  "name": "electon-plc-gui",
+  "name": "electron-plc-gui",
   "version": "0.0.0",
-  "description": "Electon-PLC-GUI",
+  "description": "Electron-PLC-GUI",
   "main": "app.js",
   "author": "",
+  "scripts": {
+    "start": "electron ."
+  },
   "devDependencies": {
+    "electron": "^28.2.1",
     "eslint": "^8.21.0"
   },
   "eslintConfig": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
-  },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "electron": "^28.2.1",
     "st-ethernet-ip": "^2.6.9"
   }
 }

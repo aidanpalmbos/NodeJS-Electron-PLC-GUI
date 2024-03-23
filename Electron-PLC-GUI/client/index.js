@@ -32,7 +32,35 @@ async function readTag() {
         status.innerHTML = "Error: Please Connect to PLC First!";
         return;
     }
+
     let tagToBeRead = document.getElementById("ReadEnterTag").value;
+    if (tagToBeRead == "") {
+        status.innerHTML = "Error: Please enter a tag to use!";
+        return;
+    }
+
     let result = await window.electronAPI.readPlc(tagToBeRead);
+    status.innerHTML = `Result = ${result}`;
+}
+
+async function writeTag() {
+    let status = document.getElementById("StatusWriteTag");
+    if (!plcConnected) {
+        status.innerHTML = "Error: Please Connect to PLC First!";
+        return;
+    }
+
+    let tagToBeWritten = document.getElementById("WriteEnterTag").value;
+    let tagNewValue = document.getElementById("WriteValueToTag").value;
+    if (tagToBeWritten == "") {
+        status.innerHTML = "Error: Please enter a tag to use!";
+        return;
+    }
+    else if (tagNewValue == "") {
+        status.innerHTML = "Error: Please enter a value!";
+        return;
+    }
+
+    let result = await window.electronAPI.writePlc(tagToBeWritten, tagNewValue);
     status.innerHTML = `Result = ${result}`;
 }

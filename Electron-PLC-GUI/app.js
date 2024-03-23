@@ -1,4 +1,3 @@
-/* eslint-env es6 */
 const { app, BrowserWindow, ipcMain } = require('electron');
 const { Controller, Tag } = require('st-ethernet-ip');
 const path = require('node:path');

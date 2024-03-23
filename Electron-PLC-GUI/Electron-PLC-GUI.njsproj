@@ -2,15 +2,16 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Electon-PLC-GUI</Name>
-    <RootNamespace>Electon-PLC-GUI</RootNamespace>
+    <Name>Electron-PLC-GUI</Name>
+    <RootNamespace>Electron-PLC-GUI</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c9c1d8d7-3e5b-4e61-ac5e-6d7878b88d97</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>app.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
@@ -33,6 +34,7 @@
     <Content Include="client\index.html" />
     <Content Include="client\index.js" />
     <Content Include="client\Kanit-Regular.ttf" />
+    <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="preload.js" />
     <Content Include="README.md" />
